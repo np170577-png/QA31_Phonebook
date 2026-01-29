@@ -2,8 +2,6 @@ package tests;
 
 import models.Contact;
 import models.User;
-import org.checkerframework.checker.units.qual.A;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,7 +15,7 @@ public class AddNewContactTests extends TestBase {
     public void precondition() {
 
         if (!app.getHelperUser().isLogged()) {
-            app.getHelperUser().login(new User().setEmail("np77@inbox.ru").setPassword("Satiblai4t!"));
+            app.getHelperUser().login(new User().setEmail("np7788@inbox.ru").setPassword("WadiNisnas8#"));
 
         }
     }
@@ -38,6 +36,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
+        app.getHelperContact().getScreen("src/test/screenshots/screen/screen" + i + ".png");
         app.getHelperContact().save();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue((app.getHelperContact().isContactAddedByPhone(contact.getPhone())));

@@ -1,10 +1,20 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.List;
 
 public class HelperBase {
+    Logger logger = LoggerFactory.getLogger(HelperBase.class);
     WebDriver wd;
 
     public HelperBase(WebDriver wd) {
@@ -15,13 +25,50 @@ public class HelperBase {
         WebElement element = wd.findElement(locator);
         element.click();
         element.clear();
+        clearNew(element);
         if (text != null) {
             element.sendKeys(text);
         }
     }
 
-    public void click(By locator){
+    public void clearNew(WebElement element) {
+        element.sendKeys(" ");
+        element.sendKeys(Keys.BACK_SPACE);
+    }
+
+    public void click(By locator) {
         WebElement element = wd.findElement(locator);
         element.click();
+    }
+
+    public boolean isElementPresent(By locator) {
+        List<WebElement> list = wd.findElements(locator);
+        return list.size() > 0;
+    }
+
+    public void pause(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void getScreen(String link) {
+        TakesScreenshot takesScreenshot = (TakesScreenshot) wd;
+       File temp = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        try {
+            Files.copy(temp,new File("src/test/screenshots/screen.png"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+    public boolean isNoContactsHereDisplayed() {
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
+        boolean res = wait.until(ExpectedConditions
+                .textToBePresentInElement(wd.findElement(By.cssSelector(".contact-page_message__2qafk>h1")),
+                        "No Contacts here!"));
+        return res;
     }
 }

@@ -55,7 +55,7 @@ public class RegistrationTests extends TestBase {
     @Test
     public void registrationRegisteredUser(){
 
-        User user = new User().setEmail("np77@inbox.ru").setPassword("Wasipulai7%");
+        User user = new User().setEmail("np7788@inbox.ru").setPassword("WadiNisnas8#");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         app.getHelperUser().submitRegistration();
