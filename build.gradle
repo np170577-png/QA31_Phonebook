@@ -26,27 +26,26 @@ dependencies {
     }
 
 
-task qa(type:Test) {
+task qa(type: Test) {
     useTestNG() {
-
         def suite = System.getProperty('suite', '')
 
         if (suite.equals('quick')) {
             suites 'src/test/resources/quick.xml'
         } else if (suite.equals('login')) {
-            suites 'src/test/resources/login.xml.'
+            suites 'src/test/resources/login.xml'
         } else {
             suites 'src/test/resources/testng.xml'
         }
     }
-}
 
-    if(project.hasProperty('browser')){
+    if (project.hasProperty('browser')) {
         systemProperty 'browser',
 
                 "${browser}"
 
     }
+
     task scoupe(type:Test){
         useTestNG(){
             suites 'src/test/resources/scoupe.xml'
@@ -60,8 +59,9 @@ task qa(type:Test) {
         }
     }
 
+
     task team(type:Test){
-        useTestNG() {
+        useTestNG(){
             def groups = System.getProperty('groups')
             if (groups != null) {
                 includeGroups groups
@@ -70,5 +70,4 @@ task qa(type:Test) {
         }
     }
 
-
-
+}

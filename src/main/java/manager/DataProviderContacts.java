@@ -3,7 +3,6 @@ package manager;
 import models.Contact;
 import org.testng.annotations.DataProvider;
 
-import javax.xml.crypto.Data;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -12,7 +11,7 @@ import java.util.List;
 public class DataProviderContacts {
 
     @DataProvider
-    public Iterator<Object[]> exapmle() {
+    public Iterator<Object[]> example() {
         List<Object[]> list = new ArrayList<>();
 
         return list.iterator();
@@ -80,22 +79,25 @@ public class DataProviderContacts {
         return list.iterator();
     }
 
+
     @DataProvider
     public Iterator<Object[]> contactCSV() throws IOException {
         List<Object[]> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contact.csv")));
         String line = reader.readLine();
-        while(line!=null){
+        while (line != null) {
             String[] all = line.split(",");
             list.add(new Object[]{Contact.builder()
                     .name(all[0])
                     .lastName(all[1])
-                    .phone(all[2])
-                    .address(all[3])
+                    .email(all[2])
+                    .phone(all[3])
+                    .address(all[4])
                     .description(all[5])
                     .build()});
             line = reader.readLine();
         }
         return list.iterator();
     }
+
 }

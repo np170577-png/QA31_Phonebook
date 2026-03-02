@@ -1,15 +1,14 @@
 package tests;
 
 import manager.DataProviderContacts;
+import manager.DataProviderUser;
 import models.Contact;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.Random;
-
 
 public class AddNewContactTests extends TestBase {
 
@@ -17,7 +16,8 @@ public class AddNewContactTests extends TestBase {
     public void precondition() {
 
         if (!app.getHelperUser().isLogged()) {
-            app.getHelperUser().login(new User().setEmail("np7788@inbox.ru").setPassword("WadiNisnas8#"));
+            app.getHelperUser().login(new User()
+                    .setEmail("np7788@inbox.ru").setPassword("WadiNisnas8#"));
 
         }
     }
@@ -25,34 +25,29 @@ public class AddNewContactTests extends TestBase {
     @Test(dataProvider = "contactSuccess", dataProviderClass = DataProviderContacts.class)
 
     public void addContactSuccessAllFields(Contact contact) {
-
         int i = new Random().nextInt(1000) + 1000;
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().getScreen("src/test/screenshots/screen/screen" + i + ".png");
+        app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
         app.getHelperContact().save();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
-        Assert.assertTrue((app.getHelperContact().isContactAddedByPhone(contact.getPhone())));
-        //Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
+        Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
 
     }
 
     @Test(dataProvider = "contactCSV", dataProviderClass = DataProviderContacts.class)
-
-    public void addContactSuccessAllFieldsSCV(Contact contact) {
-
+    public void addContactSuccessAllFieldsCSV(Contact contact) {
         int i = new Random().nextInt(1000) + 1000;
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().getScreen("src/test/screenshots/screen/screen" + i + ".png");
+        app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
         app.getHelperContact().save();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
-        Assert.assertTrue((app.getHelperContact().isContactAddedByPhone(contact.getPhone())));
-        //Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
+        Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
 
     }
 

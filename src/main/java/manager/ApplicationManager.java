@@ -24,27 +24,17 @@ public class ApplicationManager {
 
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
-
-
-
-    public ApplicationManager() {
-        this.browser = browser;
-    }
-
-
-
     public void init() {
-
-       if (browser.equals(Browser.CHROME.browserName())) {
+        if (browser.equals(Browser.CHROME.browserName())) {
             wd = new ChromeDriver();
-           logger.info("All tests run in CHROME Browser");
-       }else if (browser.equals(Browser.FIREFOX.browserName())){
-           wd = new FirefoxDriver();
-           logger.info("All tests run in Firefox Browser");
-       }else if (browser.equals(Browser.EDGE.browserName()))
-           wd = new EdgeDriver();
-        logger.info("All tests run in Edge Browser");
-
+            logger.info("All tests runs i CHROME Browser");
+        }else if (browser.equals(Browser.FIREFOX.browserName())){
+            wd=new FirefoxDriver();
+            logger.info("All tests runs i FIREFOX Browser");
+        } else if (browser.equals(Browser.EDGE.browserName())) {
+            wd=new EdgeDriver();
+            logger.info("All tests runs i EDGE Browser");
+        }
 
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -53,8 +43,7 @@ public class ApplicationManager {
         wd = new EventFiringDecorator(webDriverListener).decorate(wd);
 
         wd.navigate().to("https://telranedu.web.app/");
-        logger.info("The link is -->" + wd.getCurrentUrl());
-
+        logger.info("The link-->" + wd.getCurrentUrl());
         helperUser = new HelperUser(wd);
         helperContact = new HelperContact(wd);
 
@@ -69,7 +58,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        wd.quit();
+       // wd.quit();
     }
 
 }

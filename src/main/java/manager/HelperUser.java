@@ -4,7 +4,6 @@ import models.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,12 +15,13 @@ public class HelperUser extends HelperBase {
         super(wd);
     }
 
+
     public void openLoginRegistrationForm() {
         // WebElement loginTab = wd.findElement(By.cssSelector("a[href='/login']"));
 //        WebElement loginTab = wd.findElement(By.xpath("//a[text()='LOGIN']"));
 //        loginTab.click();
         click(By.cssSelector("a[href='/login']"));
-
+        logger.info("open form by click on button with locator By.cssSelector(\"a[href='/login']\") ");
     }
 
 
@@ -32,23 +32,20 @@ public class HelperUser extends HelperBase {
 //        emailInput.sendKeys(email);
 
         type(By.name("email"), email);
-
-//        WebElement emailInput = wd.findElement(By.name("email"));
-//        emailInput.click();
-//        emailInput.clear();
-//        emailInput.sendKeys(login);
-
-
-//        WebElement passwordInput = wd.findElement(By.cssSelector("[placeholder = 'Password']"));
+        logger.info("type in input with locator By.name(\"email\")");
+//
+//        WebElement passwordInput = wd.findElement(By.xpath("//input[@placeholder='Password']"));
 //        passwordInput.click();
 //        passwordInput.clear();
 //        passwordInput.sendKeys(password);
-
+        type(By.xpath("//input[@placeholder='Password']"), password);
+        //type(By.xpath("//input[@placeholder='Pass']"), password);
+        logger.info("type in input with locator By.xpath(\"//input[@placeholder='Password']\") ");
     }
 
     public void fillLoginRegistrationForm(User user) {
         type(By.name("email"), user.getEmail());
-        type(By.name("password"), user.getPassword());
+        type(By.xpath("//input[@placeholder='Password']"), user.getPassword());
 
     }
 
@@ -84,10 +81,10 @@ public class HelperUser extends HelperBase {
     }
 
 
+
     public void login(User user) {
         openLoginRegistrationForm();
         fillLoginRegistrationForm(user);
         submitLogin();
     }
-
 }

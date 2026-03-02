@@ -1,5 +1,0 @@
-20:08:28.987 INFO  manager.ApplicationManager - All tests run in CHROME Browser
-20:08:28.988 INFO  manager.ApplicationManager - All tests run in Edge Browser
-20:08:30.797 INFO  manager.ApplicationManager - The link is -->https://telranedu.web.app/home
-20:08:30.804 INFO  manager.TestNGListener - Start tests on date Wed Feb 25 20:08:30 IST 2026=================
-20:08:30.810 INFO  manager.TestNGListener - Stop testing on date Wed Feb 25 20:08:30 IST 2026=================

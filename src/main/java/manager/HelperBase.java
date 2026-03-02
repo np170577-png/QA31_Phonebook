@@ -1,6 +1,5 @@
 package manager;
 
-
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,12 +13,15 @@ import java.time.Duration;
 import java.util.List;
 
 public class HelperBase {
+
     Logger logger = LoggerFactory.getLogger(HelperBase.class);
+
     WebDriver wd;
 
     public HelperBase(WebDriver wd) {
         this.wd = wd;
     }
+
 
     public void type(By locator, String text) {
         WebElement element = wd.findElement(locator);
@@ -54,16 +56,17 @@ public class HelperBase {
         }
     }
 
+
     public void getScreen(String link) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) wd;
-       File temp = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        File temp = takesScreenshot.getScreenshotAs(OutputType.FILE);
         try {
-            Files.copy(temp,new File("src/test/screenshots/screen.png"));
+            Files.copy(temp, new File(link));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
+
     public boolean isNoContactsHereDisplayed() {
         WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
         boolean res = wait.until(ExpectedConditions
