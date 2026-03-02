@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class RemoveContactsTest extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition() {
 
         if (!app.getHelperUser().isLogged()) {
@@ -21,7 +21,7 @@ public class RemoveContactsTest extends TestBase{
     }
 
 
-    @Test
+    @Test(groups = {"smoke"})
     public void removeFirstContact(){
         Assert.assertEquals(app.getHelperContact().removeOneContact(), 1);
 

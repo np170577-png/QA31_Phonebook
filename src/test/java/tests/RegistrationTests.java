@@ -11,7 +11,7 @@ public class RegistrationTests extends TestBase {
     Random random = new Random();
     int i = (int) System.currentTimeMillis() / 1000 % 3600;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition() {
         if (app.getHelperUser().isLogged()) {
             app.getHelperUser().logOut();
@@ -31,7 +31,7 @@ public class RegistrationTests extends TestBase {
 
     }
 
-    @Test(description = "Bug report #23456 Fixed")
+    @Test(description = "Bug report #23456 Fixed",groups = {"smoke"})
     public void registrationWrongEmail() {
 
         User user = new User().setEmail("lisa" + i + "gmail.com").setPassword("12345&Aa");

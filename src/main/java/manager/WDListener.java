@@ -51,7 +51,7 @@ public class WDListener implements WebDriverListener {
     @Override
     public void onError(Object target, Method method, Object[] args, InvocationTargetException e) {
         WebDriverListener.super.onError(target, method, args, e);
-        logger.info("Huston, we have a problem!");
+        logger.info("Houston, we have a problem!");
         logger.info("+++++++++++++++++++++++++++++++");
         logger.info("Object target " + target.toString());
         logger.info("+++++++++++++++++++++++++++++++");
