@@ -1,0 +1,27 @@
+20:15:03.372 INFO  manager.ApplicationManager - All tests run in CHROME Browser
+20:15:05.391 INFO  manager.ApplicationManager - The link is -->https://telranedu.web.app/home
+20:15:05.414 INFO  manager.TestNGListener - Start tests on date Thu Feb 12 20:15:05 IST 2026=================
+20:15:05.432 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+20:15:10.563 INFO  manager.WDListener - After find element By.cssSelector: a[href='/login']
+20:15:10.576 INFO  manager.WDListener - Location of element a
+20:15:10.600 INFO  manager.WDListener - Before click element --> atext=LOGIN
+20:15:10.687 INFO  manager.WDListener - After click element a
+20:15:10.726 INFO  manager.WDListener - After find element By.name: email
+20:15:10.734 INFO  manager.WDListener - Location of element input
+20:15:10.750 INFO  manager.WDListener - Before click element --> inputtext=
+20:15:10.805 INFO  manager.WDListener - After click element input
+20:15:10.838 INFO  manager.WDListener - Send Keys input
+20:15:10.874 INFO  manager.WDListener - Send Keys input
+20:15:10.905 INFO  manager.WDListener - Send Keys input
+20:15:10.975 INFO  manager.WDListener - After find element By.name: password
+20:15:10.986 INFO  manager.WDListener - Location of element input
+20:15:11.005 INFO  manager.WDListener - Before click element --> inputtext=
+20:15:11.065 INFO  manager.WDListener - After click element input
+20:15:11.091 INFO  manager.WDListener - Send Keys input
+20:15:11.121 INFO  manager.WDListener - Send Keys input
+20:15:11.151 INFO  manager.WDListener - Send Keys input
+20:15:11.216 INFO  manager.WDListener - After find element By.xpath: //button[text()='Login']
+20:15:11.224 INFO  manager.WDListener - Location of element button
+20:15:11.242 INFO  manager.WDListener - Before click element --> buttontext=Login
+20:15:11.324 INFO  manager.TestNGListener - Start test addContactSuccessAllFieldsSCV=================
+20:15:11.327 INFO  manager.TestNGListener - Stop testing on date Thu Feb 12 20:15:05 IST 2026=================

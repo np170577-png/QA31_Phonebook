@@ -1,0 +1,50 @@
+22:00:20.283 INFO  manager.ApplicationManager - All tests run in CHROME Browser
+22:00:22.313 INFO  manager.ApplicationManager - The link is -->https://telranedu.web.app/home
+22:00:22.341 INFO  manager.TestNGListener - Start tests on date Wed Feb 11 22:00:22 IST 2026=================
+22:00:22.390 INFO  tests.TestBase - Name of method -->loginSuccess
+22:00:22.394 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:00:27.442 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:27.443 INFO  tests.TestBase - Start test loginSuccess
+22:00:27.446 INFO  tests.TestBase - Test data margo@gmail.com and password Mmar123456$
+22:00:27.525 INFO  manager.WDListener - After find element By.cssSelector: a[href='/login']
+22:00:27.542 INFO  manager.WDListener - Location of element a
+22:00:27.570 INFO  manager.WDListener - Before click element --> atext=LOGIN
+22:00:27.669 INFO  manager.WDListener - After click element a
+22:00:27.715 INFO  manager.WDListener - After find element By.name: email
+22:00:27.729 INFO  manager.WDListener - Location of element input
+22:00:27.753 INFO  manager.WDListener - Before click element --> inputtext=
+22:00:27.834 INFO  manager.WDListener - After click element input
+22:00:27.865 INFO  manager.WDListener - Send Keys input
+22:00:27.910 INFO  manager.WDListener - Send Keys input
+22:00:27.950 INFO  manager.WDListener - Send Keys input
+22:00:28.040 INFO  manager.WDListener - After find element By.xpath: //button[text()='Login']
+22:00:28.057 INFO  manager.WDListener - Location of element button
+22:00:28.092 INFO  manager.WDListener - Before click element --> buttontext=Login
+22:00:28.226 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:00:29.264 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.266 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+22:00:29.267 INFO  tests.TestBase - Name of method -->loginSuccess
+22:00:29.268 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:00:29.278 INFO  manager.WDListener - Houston, we have a problem!
+22:00:29.278 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+22:00:29.278 INFO  manager.WDListener - Object target ChromeDriver: chrome on windows (f6ec09c4754108b53341322799ac6043)
+22:00:29.279 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+22:00:29.279 INFO  manager.WDListener - Method name findElements
+22:00:29.279 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+22:00:29.280 INFO  manager.WDListener - InvocationTargetException org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong email or password}
+  (Session info: chrome=144.0.7559.133): Wrong email or password
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6ec09c4754108b53341322799ac6043, findElements {value=//button[text()='Sign Out'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\np170\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59976}, goog:processID: 15660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59976/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6ec09c4754108b53341322799ac6043
+22:00:29.281 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+22:00:29.281 INFO  manager.WDListener - Screen with error is src/test/screenshots/screen_1391.png
+22:00:29.634 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.636 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.640 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.641 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.644 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.645 INFO  manager.TestNGListener - Start test loginSuccess=================
+22:00:29.652 INFO  manager.TestNGListener - Stop testing on date Wed Feb 11 22:00:22 IST 2026=================

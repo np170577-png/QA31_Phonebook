@@ -1,0 +1,99 @@
+22:14:25.532 INFO  manager.ApplicationManager - All tests run in CHROME Browser
+22:14:27.920 INFO  manager.ApplicationManager - The link is -->https://telranedu.web.app/home
+22:14:27.947 INFO  manager.TestNGListener - Start tests on date Wed Feb 11 22:14:27 IST 2026=================
+22:14:28.015 INFO  tests.TestBase - Name of method -->loginSuccessModel
+22:14:28.017 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:14:33.062 INFO  manager.TestNGListener - Start test loginSuccessModel=================
+22:14:33.066 INFO  tests.TestBase - Test data User{email='np7788@inbox.ru', password='WadiNisnas8#'}
+22:14:33.143 INFO  manager.WDListener - After find element By.cssSelector: a[href='/login']
+22:14:33.167 INFO  manager.WDListener - Location of element a
+22:14:33.207 INFO  manager.WDListener - Before click element --> atext=LOGIN
+22:14:33.315 INFO  manager.WDListener - After click element a
+22:14:33.359 INFO  manager.WDListener - After find element By.name: email
+22:14:33.375 INFO  manager.WDListener - Location of element input
+22:14:33.400 INFO  manager.WDListener - Before click element --> inputtext=
+22:14:33.466 INFO  manager.WDListener - After click element input
+22:14:33.505 INFO  manager.WDListener - Send Keys input
+22:14:33.563 INFO  manager.WDListener - Send Keys input
+22:14:33.616 INFO  manager.WDListener - Send Keys input
+22:14:33.700 INFO  manager.WDListener - After find element By.name: password
+22:14:33.719 INFO  manager.WDListener - Location of element input
+22:14:33.737 INFO  manager.WDListener - Before click element --> inputtext=
+22:14:33.814 INFO  manager.WDListener - After click element input
+22:14:33.866 INFO  manager.WDListener - Send Keys input
+22:14:33.909 INFO  manager.WDListener - Send Keys input
+22:14:33.956 INFO  manager.WDListener - Send Keys input
+22:14:34.021 INFO  manager.WDListener - After find element By.xpath: //button[text()='Login']
+22:14:34.030 INFO  manager.WDListener - Location of element button
+22:14:34.046 INFO  manager.WDListener - Before click element --> buttontext=Login
+22:14:34.124 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:14:35.079 INFO  tests.TestBase - Assert checks if element button 'Sign out' is present
+22:14:35.083 INFO  manager.TestNGListener - Start test loginSuccessModel=================
+22:14:35.084 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+22:14:35.087 INFO  tests.TestBase - Name of method -->loginSuccessModel
+22:14:35.099 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:14:35.180 INFO  manager.WDListener - After find element By.xpath: //button[text()='Sign Out']
+22:14:35.187 INFO  manager.WDListener - Location of element button
+22:14:35.204 INFO  manager.WDListener - Before click element --> buttontext=Sign Out
+22:14:35.288 INFO  tests.TestBase - Before method finished logout
+22:14:35.289 INFO  manager.TestNGListener - Start test loginSuccessModel=================
+22:14:35.290 INFO  tests.TestBase - Test data User{email='np77@inbox.ru', password='Satiblai4t!'}
+22:14:35.325 INFO  manager.WDListener - After find element By.cssSelector: a[href='/login']
+22:14:35.340 INFO  manager.WDListener - Location of element a
+22:14:35.360 INFO  manager.WDListener - Before click element --> atext=LOGIN
+22:14:35.414 INFO  manager.WDListener - After click element a
+22:14:35.438 INFO  manager.WDListener - After find element By.name: email
+22:14:35.448 INFO  manager.WDListener - Location of element input
+22:14:35.463 INFO  manager.WDListener - Before click element --> inputtext=
+22:14:35.550 INFO  manager.WDListener - After click element input
+22:14:35.581 INFO  manager.WDListener - Send Keys input
+22:14:35.610 INFO  manager.WDListener - Send Keys input
+22:14:35.636 INFO  manager.WDListener - Send Keys input
+22:14:35.696 INFO  manager.WDListener - After find element By.name: password
+22:14:35.705 INFO  manager.WDListener - Location of element input
+22:14:35.720 INFO  manager.WDListener - Before click element --> inputtext=
+22:14:35.777 INFO  manager.WDListener - After click element input
+22:14:35.801 INFO  manager.WDListener - Send Keys input
+22:14:35.826 INFO  manager.WDListener - Send Keys input
+22:14:35.856 INFO  manager.WDListener - Send Keys input
+22:14:35.913 INFO  manager.WDListener - After find element By.xpath: //button[text()='Login']
+22:14:35.920 INFO  manager.WDListener - Location of element button
+22:14:35.935 INFO  manager.WDListener - Before click element --> buttontext=Login
+22:14:36.002 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:14:36.341 INFO  tests.TestBase - Assert checks if element button 'Sign out' is present
+22:14:36.342 INFO  manager.TestNGListener - Start test loginSuccessModel=================
+22:14:36.342 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+22:14:36.343 INFO  tests.TestBase - Name of method -->loginSuccessModel
+22:14:36.345 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:14:36.396 INFO  manager.WDListener - After find element By.xpath: //button[text()='Sign Out']
+22:14:36.408 INFO  manager.WDListener - Location of element button
+22:14:36.426 INFO  manager.WDListener - Before click element --> buttontext=Sign Out
+22:14:36.520 INFO  tests.TestBase - Before method finished logout
+22:14:36.522 INFO  manager.TestNGListener - Start test loginSuccessModel=================
+22:14:36.523 INFO  tests.TestBase - Test data User{email='np7788@inbox.ru', password='WadiNisnas8#'}
+22:14:36.555 INFO  manager.WDListener - After find element By.cssSelector: a[href='/login']
+22:14:36.567 INFO  manager.WDListener - Location of element a
+22:14:36.588 INFO  manager.WDListener - Before click element --> atext=LOGIN
+22:14:36.648 INFO  manager.WDListener - After click element a
+22:14:36.679 INFO  manager.WDListener - After find element By.name: email
+22:14:36.692 INFO  manager.WDListener - Location of element input
+22:14:36.715 INFO  manager.WDListener - Before click element --> inputtext=
+22:14:36.798 INFO  manager.WDListener - After click element input
+22:14:36.824 INFO  manager.WDListener - Send Keys input
+22:14:36.852 INFO  manager.WDListener - Send Keys input
+22:14:36.880 INFO  manager.WDListener - Send Keys input
+22:14:36.930 INFO  manager.WDListener - After find element By.name: password
+22:14:36.937 INFO  manager.WDListener - Location of element input
+22:14:36.950 INFO  manager.WDListener - Before click element --> inputtext=
+22:14:37.016 INFO  manager.WDListener - After click element input
+22:14:37.048 INFO  manager.WDListener - Send Keys input
+22:14:37.074 INFO  manager.WDListener - Send Keys input
+22:14:37.104 INFO  manager.WDListener - Send Keys input
+22:14:37.163 INFO  manager.WDListener - After find element By.xpath: //button[text()='Login']
+22:14:37.169 INFO  manager.WDListener - Location of element button
+22:14:37.182 INFO  manager.WDListener - Before click element --> buttontext=Login
+22:14:37.236 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+22:14:37.523 INFO  tests.TestBase - Assert checks if element button 'Sign out' is present
+22:14:37.524 INFO  manager.TestNGListener - Start test loginSuccessModel=================
+22:14:37.525 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+22:14:37.530 INFO  manager.TestNGListener - Stop testing on date Wed Feb 11 22:14:27 IST 2026=================

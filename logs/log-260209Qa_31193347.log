@@ -1,0 +1,49 @@
+19:33:49.185 INFO  manager.ApplicationManager - All tests run in CHROME Browser
+19:33:50.320 INFO  manager.ApplicationManager - The link is -->https://telranedu.web.app/
+19:33:50.350 INFO  manager.TestNGListener - Start tests on date Mon Feb 09 19:33:50 IST 2026=================
+19:33:50.412 INFO  tests.TestBase - Name of method -->loginSuccess
+19:33:50.416 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+19:33:55.468 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:33:55.469 INFO  tests.TestBase - Start test loginSuccess
+19:33:55.470 INFO  tests.TestBase - Test data np7788@inbox.ru and password WadiNisnas8#
+19:34:00.103 INFO  manager.WDListener - Huston, we have a problem!
+19:34:00.103 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.104 INFO  manager.WDListener - Object target ChromeDriver: chrome on windows (f8d0ebbfc4b74129b8f3a1a9e60e4891)
+19:34:00.104 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.104 INFO  manager.WDListener - Method name findElement
+19:34:00.104 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.106 INFO  manager.WDListener - InvocationTargetException org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8d0ebbfc4b74129b8f3a1a9e60e4891, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\np170\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59360}, goog:processID: 19972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59360/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8d0ebbfc4b74129b8f3a1a9e60e4891
+19:34:00.107 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.108 INFO  manager.WDListener - Screen with error is src/test/screenshots/screen_1612.png
+19:34:00.129 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.130 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+19:34:00.132 INFO  tests.TestBase - Name of method -->loginSuccess
+19:34:00.133 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+19:34:00.139 INFO  manager.WDListener - Huston, we have a problem!
+19:34:00.139 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.139 INFO  manager.WDListener - Object target ChromeDriver: chrome on windows (f8d0ebbfc4b74129b8f3a1a9e60e4891)
+19:34:00.139 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.139 INFO  manager.WDListener - Method name findElements
+19:34:00.139 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.140 INFO  manager.WDListener - InvocationTargetException org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8d0ebbfc4b74129b8f3a1a9e60e4891, findElements [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\np170\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59360}, goog:processID: 19972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59360/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8d0ebbfc4b74129b8f3a1a9e60e4891
+19:34:00.140 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+19:34:00.141 INFO  manager.WDListener - Screen with error is src/test/screenshots/screen_1379.png
+19:34:00.156 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.157 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.158 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.158 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.159 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.159 INFO  manager.TestNGListener - Start test loginSuccess=================
+19:34:00.162 INFO  manager.TestNGListener - Stop testing on date Mon Feb 09 19:33:50 IST 2026=================

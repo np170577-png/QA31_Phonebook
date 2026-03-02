@@ -1,0 +1,100 @@
+20:17:50.414 INFO  manager.ApplicationManager - All tests run in CHROME Browser
+20:17:52.575 INFO  manager.ApplicationManager - The link is -->https://telranedu.web.app/home
+20:17:52.598 INFO  manager.TestNGListener - Start tests on date Thu Feb 12 20:17:52 IST 2026=================
+20:17:52.627 INFO  manager.WDListener - Before find element By.xpath: //button[text()='Sign Out']
+20:17:57.735 INFO  manager.WDListener - After find element By.cssSelector: a[href='/login']
+20:17:57.750 INFO  manager.WDListener - Location of element a
+20:17:57.782 INFO  manager.WDListener - Before click element --> atext=LOGIN
+20:17:57.851 INFO  manager.WDListener - After click element a
+20:17:57.886 INFO  manager.WDListener - After find element By.name: email
+20:17:57.895 INFO  manager.WDListener - Location of element input
+20:17:57.909 INFO  manager.WDListener - Before click element --> inputtext=
+20:17:57.963 INFO  manager.WDListener - After click element input
+20:17:57.996 INFO  manager.WDListener - Send Keys input
+20:17:58.052 INFO  manager.WDListener - Send Keys input
+20:17:58.085 INFO  manager.WDListener - Send Keys input
+20:17:58.161 INFO  manager.WDListener - After find element By.name: password
+20:17:58.171 INFO  manager.WDListener - Location of element input
+20:17:58.191 INFO  manager.WDListener - Before click element --> inputtext=
+20:17:58.246 INFO  manager.WDListener - After click element input
+20:17:58.271 INFO  manager.WDListener - Send Keys input
+20:17:58.303 INFO  manager.WDListener - Send Keys input
+20:17:58.338 INFO  manager.WDListener - Send Keys input
+20:17:58.421 INFO  manager.WDListener - After find element By.xpath: //button[text()='Login']
+20:17:58.438 INFO  manager.WDListener - Location of element button
+20:17:58.453 INFO  manager.WDListener - Before click element --> buttontext=Login
+20:17:58.548 INFO  tests.TestBase - Name of method -->addContactSuccessAllFieldsSCV
+20:17:58.550 INFO  manager.TestNGListener - Start test addContactSuccessAllFieldsSCV=================
+20:17:59.526 INFO  manager.WDListener - After find element By.xpath: //*[@href='/add']
+20:17:59.536 INFO  manager.WDListener - Location of element a
+20:17:59.555 INFO  manager.WDListener - Before click element --> atext=ADD
+20:17:59.612 INFO  manager.WDListener - After click element a
+20:17:59.640 INFO  manager.WDListener - After find element By.xpath: //input[@placeholder='Name']
+20:17:59.651 INFO  manager.WDListener - Location of element input
+20:17:59.682 INFO  manager.WDListener - Before click element --> inputtext=
+20:17:59.730 INFO  manager.WDListener - After click element input
+20:17:59.756 INFO  manager.WDListener - Send Keys input
+20:17:59.780 INFO  manager.WDListener - Send Keys input
+20:17:59.808 INFO  manager.WDListener - Send Keys input
+20:17:59.867 INFO  manager.WDListener - After find element By.xpath: //input[@placeholder='Last Name']
+20:17:59.875 INFO  manager.WDListener - Location of element input
+20:17:59.889 INFO  manager.WDListener - Before click element --> inputtext=
+20:17:59.935 INFO  manager.WDListener - After click element input
+20:17:59.963 INFO  manager.WDListener - Send Keys input
+20:17:59.993 INFO  manager.WDListener - Send Keys input
+20:18:00.023 INFO  manager.WDListener - Send Keys input
+20:18:00.072 INFO  manager.WDListener - After find element By.xpath: //input[@placeholder='Phone']
+20:18:00.080 INFO  manager.WDListener - Location of element input
+20:18:00.094 INFO  manager.WDListener - Before click element --> inputtext=
+20:18:00.143 INFO  manager.WDListener - After click element input
+20:18:00.168 INFO  manager.WDListener - Send Keys input
+20:18:00.196 INFO  manager.WDListener - Send Keys input
+20:18:00.221 INFO  manager.WDListener - Send Keys input
+20:18:00.320 INFO  manager.WDListener - After find element By.xpath: //input[@placeholder='email']
+20:18:00.329 INFO  manager.WDListener - Location of element input
+20:18:00.344 INFO  manager.WDListener - Before click element --> inputtext=
+20:18:00.389 INFO  manager.WDListener - After click element input
+20:18:00.417 INFO  manager.WDListener - Send Keys input
+20:18:00.447 INFO  manager.WDListener - Send Keys input
+20:18:00.521 INFO  manager.WDListener - After find element By.xpath: //input[@placeholder='Address']
+20:18:00.534 INFO  manager.WDListener - Location of element input
+20:18:00.552 INFO  manager.WDListener - Before click element --> inputtext=
+20:18:00.589 INFO  manager.WDListener - After click element input
+20:18:00.607 INFO  manager.WDListener - Send Keys input
+20:18:00.647 INFO  manager.WDListener - Send Keys input
+20:18:00.682 INFO  manager.WDListener - Send Keys input
+20:18:00.735 INFO  manager.WDListener - After find element By.xpath: //input[@placeholder='description']
+20:18:00.745 INFO  manager.WDListener - Location of element input
+20:18:00.773 INFO  manager.WDListener - Before click element --> inputtext=
+20:18:00.818 INFO  manager.WDListener - After click element input
+20:18:00.843 INFO  manager.WDListener - Send Keys input
+20:18:00.873 INFO  manager.WDListener - Send Keys input
+20:18:00.895 INFO  manager.WDListener - Send Keys input
+20:18:01.259 INFO  manager.WDListener - After find element By.xpath: //b[text()='Save']
+20:18:01.273 INFO  manager.WDListener - Location of element b
+20:18:01.292 INFO  manager.WDListener - Before click element --> btext=Save
+20:18:01.334 INFO  manager.WDListener - After click element b
+20:18:01.334 INFO  manager.WDListener - Before find element By.cssSelector: h2
+20:18:01.681 INFO  manager.TestNGListener - Start test addContactSuccessAllFieldsSCV=================
+20:18:01.681 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+20:18:01.682 INFO  tests.TestBase - Name of method -->addContactSuccessAllFieldsSCV
+20:18:01.682 INFO  manager.TestNGListener - Start test addContactSuccessAllFieldsSCV=================
+20:18:01.692 INFO  manager.WDListener - Houston, we have a problem!
+20:18:01.692 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+20:18:01.692 INFO  manager.WDListener - Object target ChromeDriver: chrome on windows (71e763437f3803715e5f128bbc876a8d)
+20:18:01.692 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+20:18:01.693 INFO  manager.WDListener - Method name findElement
+20:18:01.693 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+20:18:01.693 INFO  manager.WDListener - InvocationTargetException org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text :  Phone not valid: Phone number must contain only digits! And length min 10, max 15!}
+  (Session info: chrome=144.0.7559.133):  Phone not valid: Phone number must contain only digits! And length min 10, max 15!
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71e763437f3803715e5f128bbc876a8d, findElement {using=xpath, value=//*[@href='/add']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\np170\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55207}, goog:processID: 5432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55207/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71e763437f3803715e5f128bbc876a8d
+20:18:01.694 INFO  manager.WDListener - +++++++++++++++++++++++++++++++
+20:18:01.694 INFO  manager.WDListener - Screen with error is src/test/screenshots/screen_1781.png
+20:18:02.013 INFO  manager.TestNGListener - Start test addContactSuccessAllFieldsSCV=================
+20:18:02.013 INFO  tests.TestBase - +++++++++++++++++++++++++++++++
+20:18:02.017 INFO  manager.TestNGListener - Stop testing on date Thu Feb 12 20:17:52 IST 2026=================
