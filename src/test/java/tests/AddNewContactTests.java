@@ -22,6 +22,8 @@ public class AddNewContactTests extends TestBase {
         }
     }
 
+    // for Jenkins
+
     @Test(dataProvider = "contactSuccess", dataProviderClass = DataProviderContacts.class)
 
     public void addContactSuccessAllFields(Contact contact) {
