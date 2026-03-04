@@ -31,7 +31,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
         app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
 
@@ -45,7 +45,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
         app.getHelperContact().getScreen("src/test/screenshots/screen-" + i + ".png");
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
 
@@ -65,7 +65,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
         //Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
@@ -84,7 +84,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isAddNewContactPageStillDisplayed());
     }
 
@@ -101,7 +101,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isAddNewContactPageStillDisplayed());
 
     }
@@ -111,7 +111,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isAddNewContactPageStillDisplayed());
         Assert.assertTrue(app.getHelperUser().isAlertPresent
                 (" Phone not valid: Phone number must contain only digits! And length min 10, max 15!"));
@@ -132,7 +132,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isAddNewContactPageStillDisplayed());
         Assert.assertTrue(app.getHelperUser().isAlertPresent("Email not valid: must be a well-formed email address"));
 
@@ -151,7 +151,7 @@ public class AddNewContactTests extends TestBase {
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactForm(contact);
         //app.getHelperContact().pause(15000);
-        app.getHelperContact().save();
+        app.getHelperContact().saveContact();
         Assert.assertTrue(app.getHelperContact().isAddNewContactPageStillDisplayed());
 
     }
